@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid">your browser does not support html5 canvas tag</canvas>
+        <script>
+            var bcanvas=document.getElementById("myCanvas");
+            var bcontext=bcanvas.getContext("2d");
+            for(var x=0.5;x<100;x+=10){
+                bcontext.moveTo(x,0);
+                bcontext.lineTo(x,100);
+                bcontext.stroke();
+            }
+        </script>
+    </body>
+</html>
