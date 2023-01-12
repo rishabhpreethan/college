@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+
 int partition(int a[], int low, int high){ 
     int pivot=a[low], i=low, j=high+1;
     int temp;    
@@ -10,7 +11,6 @@ int partition(int a[], int low, int high){
         do{     
             i++;
         }while(pivot>=a[i] && i<high); 
-
         do{     
             j--; 
         }while(pivot<a[j]); 
@@ -24,6 +24,7 @@ int partition(int a[], int low, int high){
     a[j]=pivot;    
     return j;
 }
+
 void quick_sort(int a[], int low, int high){    
     int s;    
     if(low<high){ 
@@ -32,6 +33,7 @@ void quick_sort(int a[], int low, int high){
         quick_sort(a,s+1,high);    
     }
 }
+
 int main(){    
     int a[10000],n,low,high,i;    
     clock_t st, end;    

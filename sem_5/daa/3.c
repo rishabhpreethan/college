@@ -1,7 +1,8 @@
 // TOPOLOGICAL SORTING
 
 #include<stdio.h>
-void ts(int a[20][20], int n){    
+
+void ts(int a[20][20],int n){    
     int t[10],vis[10],stack[10],i,j,indeg[10],top=0,ele,k=1;    
     for(i=1;i<=n;i++){ 
         t[i]=0; vis[i]=0; 
@@ -39,6 +40,7 @@ void ts(int a[20][20], int n){
         printf("\nTopological Ordering is:");    
         for(i=1;i<=n;i++) printf("%d",t[i]);
 }
+
 int main(){    
     int n,a[20][20],i,j;    
     printf("Enter the number of nodes\n");    

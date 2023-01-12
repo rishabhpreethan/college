@@ -1,13 +1,16 @@
 /*     KRUSKALS ALGORITHM      */
 
 #include<stdio.h>
+
 int i,j,k,a,b,u,v,n,ne=1;
 int min,mincost=0,cost[9][9],parent[9];
+
 int find(int i){ 
     while(parent[i])  
         i=parent[i]; 
     return i;
 }
+
 int uni(int i,int j){ 
     if(i!=j){  
         parent[j]=i;  
@@ -15,6 +18,7 @@ int uni(int i,int j){
     } 
     return 0;
 }
+
 int main(){ 
     printf("Enter the no. of vertices:\n"); 
     scanf("%d",&n); 
@@ -44,7 +48,7 @@ int main(){
         v=find(v);  
         if(uni(u,v)){   
             printf("%d edge (%d,%d) = %d\n",ne++,a,b,min);   
-            mincost +=min;  
+            mincost+=min;  
         }  
         cost[a][b]=cost[b][a]=999; 
         }

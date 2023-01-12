@@ -6,7 +6,7 @@
 void simple_merge(int a[],int low, int mid, int high){    
     int i=low, j=mid+1, k=low, c[10000];    
     while(i<=mid && j<=high){ 
-        if(a[i]<a[j]) {     
+        if(a[i]<a[j]){     
             c[k]=a[i];     
             i++;     
             k++; 
