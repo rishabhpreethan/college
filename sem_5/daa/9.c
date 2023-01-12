@@ -1,6 +1,7 @@
 // KNAPSACK PROBLEM
 
 #include<stdio.h>
+
 void knapsack(int n, float weight[], float profit[], float capacity){    
     float x[20], tp= 0;    
     int i, j, rc;    
@@ -24,6 +25,7 @@ void knapsack(int n, float weight[], float profit[], float capacity){
                 printf("%0.2f\n",x[i]);    
                 printf("Maximum profit is: %0.2f\n", tp);
 }
+
 int main(){    
     float weight[20], profit[20], capacity, ratio[20], temp;    
     int n, i ,j;    

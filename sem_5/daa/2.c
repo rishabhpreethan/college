@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+
 void simple_merge(int a[],int low, int mid, int high){    
     int i=low, j=mid+1, k=low, c[10000];    
     while(i<=mid && j<=high){ 
@@ -24,6 +25,7 @@ void simple_merge(int a[],int low, int mid, int high){
     for(i=low;i<=high;i++) 
         a[i]=c[i];
 }
+
 void merge_sort(int a[],int low,int high){    
     int mid;    
     if(low<high){ 
@@ -33,6 +35,7 @@ void merge_sort(int a[],int low,int high){
         simple_merge(a,low,mid,high);    
     }
 }
+
 int main(){    
     int a[10000],i=0,n;    
     clock_t st,end;    

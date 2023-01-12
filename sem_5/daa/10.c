@@ -2,7 +2,9 @@
 
 #include<stdio.h>
 #include<stdlib.h>
+
 int board[20], count;
+
 void print(int n){    
     int i, j;    
     printf("\n\nSolution %d:\n\n",++count);    
@@ -18,6 +20,7 @@ void print(int n){
         }    
     }
 }
+
 int place(int row,int column){    
     int i;    
     for(i=1;i<=row-1;i++)    {        
@@ -28,6 +31,7 @@ int place(int row,int column){
     }    
     return 1; 
 }
+
 void queen(int row,int n){    
     int column;    
     for(column=1;column<=n;column++)    {        
@@ -40,6 +44,7 @@ void queen(int row,int n){
         }    
     }
 }
+
 int main(){    
     int n;    
     printf("Enter number of Queens:");    
