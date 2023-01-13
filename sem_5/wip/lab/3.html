@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Program 3b</title> 
+<script type="text/javascript">
+
+    var newtop;
+    function totop(newtop){
+        domNew=document.getElementById(newtop).style;
+    }
+
+    function toOriginal() {
+        document.getElementById("p1").style.zIndex=0;
+        document.getElementById("p2").style.zIndex=0;
+        document.getElementById("p3").style.zIndex=0;
+    }
+</script>
+<style type="text/css"> 
+    .para1{
+        position:absolute;
+        top:0;
+        left:0;
+        Z-index:0;
+        color:blue; 
+        border-style:solid; 
+        background-color:ivory;
+    } 
+    .para2{
+        position:absolute; top:25px;
+        left:50px;
+        Z-index:0;
+        color:red; 
+        border-style:solid; 
+        background-color:ivory;
+    } 
+    .para3{
+        position:absolute;
+        top:50px; 
+        left:90px; 
+        Z-index:0;
+        border-style:solid;
+        background-color:ivory; 
+    }
+</style> 
+</head> 
+<body>
+    <img src="/Users/rishabh/Downloads/WhatsApp Image 2022-12-20 at 10.09.45 PM.jpeg" height="50%" width="50%" class="para1" id="p1" onmouseover="totop('p1')" onmouseout="toOriginal()"/>
+    <img src="/Users/rishabh/Downloads/WhatsApp Image 2022-12-20 at 10.09.45 PM.jpeg" height="50%" width="50%" class="para2" id="p2" onmouseover="totop('p2')" onmouseout="toOriginal()"/>
+    <img src="/Users/rishabh/Downloads/WhatsApp Image 2022-12-20 at 10.09.45 PM.jpeg" height="50%" width="50%" class="para3" id="p3" onmouseover="totop('p3')" onmouseout="toOriginal()"/>
+</body> 
+</html>
