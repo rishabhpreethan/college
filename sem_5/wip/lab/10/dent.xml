@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT VTU (STUDENT+)>
+<!ELEMENT STUDENT (USN,NAME,COLLEGE,BRANCH,YOJ,EMAIL)>
+<!ELEMENT USN (#PCDATA)>
+<!ELEMENT NAME (#PCDATA)>
+<!ELEMENT COLLEGE (#PCDATA)>
+<!ELEMENT BRANCH (#PCDATA)>
+<!ELEMENT YOJ (#PCDATA)>
+<!ELEMENT EMAIL (#PCDATA) >
+<!ENTITY ise "Information Science and Engineering">
+<!ENTITY NHCE "New Horizon College of Engineering,Bengaluru">
