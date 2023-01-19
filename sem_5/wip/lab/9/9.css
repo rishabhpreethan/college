@@ -1,34 +1,48 @@
 USN
 {
-    color:magenta;font-family:verdana;font-size:20pt;
+    color:magenta;
+    font-family:verdana;
+    font-size:20pt;
 }
 
 NAME
 {
-    color:blue;font-family:verdana;font-size:20pt;
+    color:blue;
+    font-family:verdana;
+    font-size:20pt;
 }
 
 COLLEGE
 {
-    color:black;font-family:verdana;font-size:20pt;
+    color:black;
+    font-family:verdana;
+    font-size:20pt;
 }
 
 BRANCH
 {
-    color:maroon;font-family:verdana;font-size:20pt;
+    color:maroon;
+    font-family:verdana;
+    font-size:20pt;
 }
 
 YOJ
 {
-    color:purple;font-family:verdana;font-size:20pt;
+    color:purple;
+    font-family:verdana;
+    font-size:20pt;
 }
 
 EMAIL
 {
-    color:green;font-family:verdana;font-size:20pt;
+    color:green;
+    font-family:verdana;
+    font-size:20pt;
 }
 
 STUDENT
 {
-    display:block;margin-top:30px;border-style:solid;
+    display:block;
+    margin-top:30px;
+    border-style:solid;
 }
