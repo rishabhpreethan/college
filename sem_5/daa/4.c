@@ -14,7 +14,7 @@ int find(int i){
 int uni(int i,int j){ 
     if(i!=j){  
         parent[j]=i;  
-    return 1; 
+        return 1; 
     } 
     return 0;
 }
@@ -34,13 +34,13 @@ int main(){
         parent[i]=0; 
     } 
     printf("The edges of Minimum Cost Spanning Tree are\n"); 
-    while(ne < n){  
-        for(i=1,min=999;i<=n;i++){   
+    while(ne < n){
+        for(i=1,min=999;i<=n;i++){
             for(j=1;j<=n;j++){    
-                if(cost[i][j]<min){     
-                    min=cost[i][j];     
-                    a=u=i;     
-                    b=v=j;    
+                if(cost[i][j]<min){
+                    min=cost[i][j];
+                    a=u=i;
+                    b=v=j;
                 }   
             }  
         }  

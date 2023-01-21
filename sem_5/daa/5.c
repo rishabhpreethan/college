@@ -25,14 +25,15 @@ int main(){
             for(j=1;j<=n;j++){  
                 if((a[i][j]<min) && (vis[i]!=0)){      
                     min=a[i][j];      
-                    u=i;      
-                    v=j;
+                    // u=i;      
+                    // v=j;
                 }     
             } 
         } 
         if(vis[v]==0){
             printf("Edge %d : (%d %d) cost %d\n", ne,u,v,a[u][v]);     
-            mincost+=a[u][v];     
+            // mincost+=a[u]  [v];
+            mincost+=min;     
             ne+=1;     
             vis[v]=1; 
         } 
