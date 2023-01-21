@@ -41,14 +41,17 @@ int main(){
     scanf("%d",&n);    
     printf("Random numbers generated are\n");    
     for(i=0;i<n;i++){ 
-        a[i]=rand()%100;     
+        // a[i]=rand()%100;
+        scanf("%d",&a[i]);    
         printf("%d\t",a[i]);    
     }    
     low=0;    
     high=n-1;    
     st=clock();    
+    printf("%lf",st);
     quick_sort(a,low,high);    
     end=clock();    
+    printf("%lf",end);
     printf("\nSorted array\n");    
     for(i=0;i<n;i++){ 
         printf("%d\t",a[i]);    
