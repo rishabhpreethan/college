@@ -1,58 +1,38 @@
 // KNAPSACK PROBLEM
 
-#include<stdio.h>
+#include <stdio.h>
 
-void knapsack(int n, float weight[], float profit[], float capacity){    
-    float x[20], tp= 0;    
-    int i, j, rc;    
-    rc=capacity;    
-    for(i=0;i<n;i++)        
-        x[i]=0.0;    
-        for (i=0;i<n;i++)    {        
-            if(weight[i]>rc)            
-                break;        
-            else        {            
-                x[i]=1.0;            
-                tp= tp+profit[i];            
-                rc=rc-weight[i];        
-            }    
-        }    
-        if(i<n)        
-            x[i]=rc/weight[i];    
-            tp= tp + (x[i]*profit[i]);    
-            printf("The result vector is:\n");    
-            for(i=0;i<n;i++)        
-                printf("%0.2f\n",x[i]);    
-                printf("Maximum profit is: %0.2f\n", tp);
+int max(int a, int b) {
+    return (a > b) ? a : b;
 }
 
-int main(){    
-    float weight[20], profit[20], capacity, ratio[20], temp;    
-    int n, i ,j;    
-    printf("Enter the no. of objects:\n ");    
-    scanf("%d",&n);    
-    printf("Enter the weights and profits of each object:\n ");    
-    for(i=0;i<n;i++){        
-        scanf("%f%f", &weight[i],&profit[i]);    
-    }    printf ("Enter the capacity of knapsack:\n");    
-    scanf("%f",&capacity);    
-    for (i=0; i<n; i++) {        
-        ratio[i]=profit[i]/weight[i];    
-    }    
-    for(i=0; i<n; i++){        
-        for(j=i+1;j< n; j++){            
-            if(ratio[i]<ratio[j]){                
-                temp= ratio[j];                
-                ratio[j]= ratio[i];               
-                ratio[i]= temp;
-                temp= weight[j];
-                weight[j]= weight[i];
-                weight[i]= temp;                
-                temp= profit[j];
-                profit[j]= profit[i];                
-                profit[i]= temp;            
-            }        
-        }    
-    }   
-    knapsack(n, weight, profit, capacity);
+int knapsack(int maxcap, int wt[], int profit[], int n) {
+    int i, w;
+    int bag[n + 1][maxcap + 1];
+    for (i = 0; i <= n; i++) {
+        for (w = 0; w <= maxcap; w++) {
+        if (i == 0 || w == 0) bag[i][w] = 0;
+        else if (wt[i - 1] <= w) {
+            // include
+            bag[i][w] = max(profit[i - 1] + bag[i - 1][w - wt[i - 1]], bag[i - 1][w]);
+        } else {
+            bag[i][w] = bag[i - 1][w];
+        }
+        }
+    }
+    return bag[n][maxcap];
+}
+
+int main() {
+    int i, n, profit[20], wt[20], maxcap;
+    printf("Enter number of items : ");
+    scanf("%d", &n);
+    printf("Enter value and weight of items : ");
+    for (i = 0; i < n; i++) {
+        scanf("%d%d", &profit[i], &wt[i]);
+    }
+    printf("\n Enter size of knapsack : ");
+    scanf("%d", &maxcap);
+    printf("%d", knapsack(maxcap, wt, profit, n));
+    return 0;
 }
