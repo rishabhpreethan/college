@@ -1,3 +1,5 @@
+// MERGE SORT
+
 #include<stdio.h>
 
 void merge(int arr[], int s, int m, int e) {

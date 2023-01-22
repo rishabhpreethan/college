@@ -1,4 +1,4 @@
-// DJ
+// DIJKSTRA'S ALGORITHM
 
 
 #include <stdio.h>
