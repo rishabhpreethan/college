@@ -16,7 +16,7 @@ int main(){
                 a[i][j]=999;     
             } 
         }    
-    }    
+    }  
     vis[1]=1;    
     ne=1;   
     mincost=0;    

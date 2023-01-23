@@ -1,65 +1,62 @@
-<!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript"> 
-    function fibonacci(){
-        var n=prompt("Enter a number"); 
-        if(n==n.match(/[0-9]*/)){
-            var a=0; 
-            var b=1; 
+    <script type="text/javascript"> function fibonacci()
+    {
+        var n=prompt("Enter a number"); if(n==n.match(/[0-9]*/))
+        {
+        var a=0;
+        var b=1;
         if(n==0)
-            document.write("No such series"); 
-        document.write("<b>FIBONACCI SERIES:<br/></b>"); 
-        if(n==1)
-            document.write(a+"<br/>"); 
-        else{
-            document.write(a+"<br/>"); 
-            document.write(b+"<br/>");
-            varb1;
-        if(n==0)
-            document.write("No such series");
-        document.write("<b>FIBONACCI SERIES:<br/></b>");
-        if(n==1)
-            document.write(a+"<br/>"); 
-        else{
-            document.write(a+"<br/>"); 
-            document.write(b+"<br/>"); 
-            for(var i=2;i<n;i++){
-                var fib=a+b;
-                a=b;
-                b=fib; 
-                document.write(fib+"<br />");
-            } 
+        document.write("No such series"); document.write("<b>FIBONACCI SERIES:<br/></b>"); if(n==1)
+        document.write(a+"<br/>");
+        else
+        {
+        document.write(a+"<br/>");
+        document.write(b+"<br/>");
+        for(var i=2;i<n;i++)
+        {
+        var fib=a+b;
+        a=b;
+        b=fib;
+        document.write(fib+"<br />");
         }
-    } 
-    else
-        alert("Inavlid Input"); 
-}
-function factorial() {
-    var n=prompt("Enter a number"); 
-    var fact=1;
-    for(i=1;i<=n;i++)
-        fact=fact*i;
-    document.write(fact);
-    else
+        }
+        }
+        else
+        alert("Inavlid Input");
+        }
+        function factorial() {
+        var n=prompt("Enter a number");
+        if(n==n.match(/[0-9]*/))
+        {
+        document.write("<h3> factorial </h3>");
+        document.write("<table border='1' width='50%'>"); document.write("<tr><th>Factorial (n)</th></tr>" ); var fact=1;
+        for(i=1;i<=n;i++)
+        {
+        var fact = fact*i }
+        document.write( "<tr><td>" + fact + "</td></tr>" ); document.write( "</table>" );
+        }
+        else
         alert("Invalid Input"); 
-} 
-</script>
-</head>
-    <body>
-        <h3><center>WEBPAGE TO OUTPUT N FIBONACCI OR FACTORIAL OF N NUMBERS </center></h3> 
-        <h2><center> Select the following Radio Button To Perform Operation</center></h2>
-        <h3><center>WEBPAGE TO OUTPUT N FIBONACCI OR FACTORIAL OF N NUMBERS </center></h3>
-        <h2><center> Select the following Radio Button To Perform Operation</center></h2>
-        <table border="6" align="center">
-            <tr>
-                <td>A.FIBONACCI</td>
-                <td><input type="radio" name="a" onclick ="fibonacci()"/></td>
-            </tr>
-            <tr>
-                <td>B.FACTORIAL</td>
-                <td><input type="radio" name="a" onclick ="factorial()"/></td>
-            </tr>
-        </table>
-    </body>
+    } 
+    </script>
+    </head>
+<body>
+    <h3>
+        <center>WEBPAGE TO OUTPUT N FIBONACCI OR FACTORIAL OF N NUMBERS</center>
+    </h3>
+    <h2>
+        <center>Select the following Radio Button To Perform Operation</center>
+    </h2>
+    <table border="6" align="center">
+        <tr>
+            <td>A.FIBONACCI</td>
+            <td><input type="radio" name="a" onclick ="fibonacci()"/></td> 
+        </tr>
+        <tr>
+            <td>B.FACTORIAL</td>
+            <td><input type="radio" name="a" onclick ="factorial()"/></td> 
+        </tr>
+    </table>
+</body> 
 </html>

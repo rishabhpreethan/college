@@ -1,30 +1,37 @@
-<?xml version ="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> 
 <?xml-stylesheet type="text/css" href="vtu1.css"?>
-
-<!DOCTYPE VTU SYSTEM "vtu1.dtd">
+<!-- <!DOCTYPE VTU SYSTEM "vtu1.dtd">  -->
 <VTU>
+    <STUDENT> 
+        <USN>1NH20IS131</USN>
+        <NAME>Rishabh</NAME> 
+        <COLLEGE>NHCE</COLLEGE> 
+        <BRANCH>Ise</BRANCH> 
+        <YOJ>2020</YOJ> 
+        <EMAIL>rishabh@gmail.com</EMAIL>
+    </STUDENT> 
     <STUDENT>
-        <USN>1NH20IS127</USN>
-        <NAME>Rahul</NAME>
-        <COLLEGE>NHCE</COLLEGE>
-        <BRANCH>ISE</BRANCH>
-        <YOJ>2020</YOJ>
-        <EMAIL>rahulgowda@gmail.com</EMAIL>
-    </STUDENT>
-    <STUDENT>
-        <USN>1NH21CS002</USN> 
-        <NAME>Biju</NAME> 
+        <USN>1NH20IS147</USN> 
+        <NAME>Samit</NAME> 
         <COLLEGE>NHCE</COLLEGE> 
         <BRANCH>Cse</BRANCH> 
-        <YOJ>2021</YOJ> 
-        <EMAIL>Biju@gmail.com</EMAIL>
+        <YOJ>2020</YOJ> 
+        <EMAIL>samit@gmail.com</EMAIL>
     </STUDENT>
     <STUDENT> 
-        <USN>1NH19EC003</USN> 
-        <NAME>Cintu</NAME> 
+        <USN>1NH20IS127</USN> 
+        <NAME>Rahul</NAME> 
         <COLLEGE>NHCE</COLLEGE> 
         <BRANCH>Ece</BRANCH> 
-        <YOJ>2019</YOJ>
-        <EMAIL>cintu@gmail.com</EMAIL> 
+        <YOJ>2020</YOJ>
+        <EMAIL>rahul@gmail.com</EMAIL> 
+    </STUDENT>
+    <STUDENT> 
+        <USN>1NH20IS114</USN> 
+        <NAME>Praneeth</NAME> 
+        <COLLEGE>NHCE</COLLEGE> 
+        <BRANCH>Ece</BRANCH> 
+        <YOJ>2020</YOJ>
+        <EMAIL>praneeth@gmail.com</EMAIL> 
     </STUDENT>
 </VTU>

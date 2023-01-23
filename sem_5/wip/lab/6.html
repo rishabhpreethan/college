@@ -1,38 +1,39 @@
+<!DOCTYPE html>
 <html>
-<head><title>Student Results</title>
-</head>
+<head><title>Student Results</title> </head>
 <body>
-    <form action="http://localhost/TEST/ student.php" method="post">
-    Name:<input type="text" name="NAME"/ ><br/>
-    USN:<input type="text" name="USN"/ ><br/>
-    Web Internet Programming:<input type="text" name="WIP"/><br/>
-    Computer Networks:<input type="text" name="CN"/><br/>
-    Data Warehousing and Data Mining:<input type="text" name="DWDM"/><br/>
-    <input type="submit" value="submit"/><br/>
-    <input type="reset" value="reset"/><br/> </form>
+    <form action="http://localhost:2123/TEST/student.php" method="post">
+        Enter Details of student
+        Name:<input type="text" name="NAME"/><br/>
+        USN:<input type="text" name="USN"/><br/>
+        Enter Marks for the below subjects:
+        Web Internet Programming:<input type="text" name="WIP"/><br/>
+        Computer Networks:<input type="text" name="CN"/><br/>
+        Data Warehousing and Data Mining:<input type="text" name="DWDM"/><br/> <input type="submit" value="submit"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form>
 </body>
 </html>
 <?php
-    $name=$_POST['NAME']; $usn=$_POST['USN']; $wip=$_POST['WIP'];
-    $cn=$_POST['CN']; $dwdm=$_POST['DWDM']; $Total_Marks=$wip+$cn+$dwdm; $Avg_Marks = ($Total_Marks)/3; if($wip>=40 && $cn>=40 && $dwdm>=40){
+$name=$_POST['NAME']; 
+$usn=$_POST['USN'];
+$wip=$_POST['WIP'];
+$cn=$_POST['CN']; $dwdm=$_POST['DWDM']; 
+$Total_Marks=$wip+$cn+$dwdm; 
+$Avg_Marks = ($Total_Marks)/3; 
+if($wip>=40 && $cn>=40 && $dwdm>=40){ 
     if($Avg_Marks >=90){
-    Print "<html><i>Student $name With USN $usn has scored A Grade</i>";}
-                
-    else if($Avg_Marks >=80 && $Avg_Marks <90){
-    Print "<html><i>Student $name With USN $usn has scored B Grade</i>";}
-    else if($Avg_Marks >=60 && $Avg_Marks
-    if($wip>=40 && $cn>=40 && $dwdm>=40){
-    if($Avg_Marks >=90){
-    Print "<html><i>Student $name With USN $usn has scored A Grade</i>";} elseif($AvgMarks>80&&$AvgMarks
-    _=_
-    <90){
-    Print "<html><i>Student $name With USN $usn has scored B Grade</i>";}
-    else if($Avg_Marks >=60 && $Avg_Marks <80){
-    Print "<html><i>Student $name With USN $usn has scored C Grade</i>";}
-    else if($Avg_Marks >=40 &&$Avg_Marks <60){
-    Print "<html><i>Student $name With USN $usn has scored D Grade</i>";}
-    }
-    else{
-    Print "<html><i>Student $name With USN $usn has scored F Grade</i>";}
-    Print "</html>";
+        Print "<html><i>Student $name With USN $usn has scored A Grade</i>";
+    } else if($Avg_Marks >=80 && $Avg_Marks <90){
+        Print "<html><i>Student $name With USN $usn has scored B Grade</i>";
+    } else if($Avg_Marks >=60 && $Avg_Marks <80){
+        Print "<html><i>Student $name With USN $usn has scored C Grade</i>";
+    } else if($Avg_Marks >=40 && $Avg_Marks <60){
+        Print "<html><i>Student $name With USN $usn has scored D Grade</i>";
+    } 
+}
+else{
+    Print "<html><i>Student $name With USN $usn has scored F Grade</i>";
+} 
+Print "</html>";
 ?>

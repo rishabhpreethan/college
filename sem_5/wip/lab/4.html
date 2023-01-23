@@ -1,50 +1,31 @@
-<html>
-<head>
-    <title> University Seat Number and Sem Validation</title>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <title> SCRIPT VALIDATION</title> </head> 
+<body>
+    <h1>USN and SEMESTER validation</h1> 
     <script type="text/javascript">
-        function validate() {
-            var usn=document.getElementById("txtusn");
-            var sem=document.getElementById("txtnum");
-            if(usn.value==usn.value.match(/[1-4][A-Z]{2}[0-9]{2}[A-Z]{2}(?!0{3})[0-9]{3}/)) {
-                if(sem.value==sem.value.match(/[1-8]/)) 
-                    alert("Entered USN &SEM is valid"); 
-                else
-                    alert("Entered sem is invalid");
-                    sem.focus();
-                    return false; 
-                } 
+        function validate(usn,sem)
+        {
+            var pattern=/^[1-4][A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{3}$/;
+            var error="";
+            if (!usn.value.match(pattern))
+            {
+                error = "USN is invalid!";
             }
-            else {
-                alert("Enter valid USN"); usn.focus();
-                return false; }
-            } 
-    </script>
-</head>
-<body >
-    <h1><center>Form to validate USN and Sem</center></h1>
-    <form onsubmit="return validate()">
-        <table border="1" align="center">
-            <tr>
-                <th>Enter university seat number</th> 
-                <td><input type="text" id="txtusn" maxlength="10"/></td>
-            </tr>
-            <tr>
-                <th>Enter a semester number</th>
-                <td><input type="text" id="txtnum" maxlength="1"/></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="submit
-                <td><input type="text" id="txtusn" maxlength="10"/></td>
-            </tr>
-            <tr>
-                <th>Enter a semester number</th>
-                <td><input type="text" id="txtnum" maxlength="1"/></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="submit form"/></td>
-                <td><input type="reset" value="Reset"/></td>
-            </tr> 
-        </table> 
-    </form> 
-</body> 
+            var pattern=/^[1-8]$/;
+            if (!sem.value.match(pattern))
+            {
+                error = error + "SEMESTER is invalid!";
+            }
+            if (error.length == 0)
+                alert("The USN and SEMESTER are valid!");
+            else alert(error);
+        } 
+    </script> 
+    <form>
+        USN: <input type="text" id="usn"/> 
+        SEMESTER: <input type="text" id="sem"/>
+        <input type="submit" value="SUBMIT" onclick="validate(usn,sem)"/> 
+    </form>
+</body>
 </html>
