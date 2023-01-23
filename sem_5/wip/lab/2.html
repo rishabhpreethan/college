@@ -1,44 +1,52 @@
 <html>
 <head>
-    <script type="text/javascript"> function fibonacci()
-    {
-        var n=prompt("Enter a number"); if(n==n.match(/[0-9]*/))
+    <script type="text/javascript"> 
+        function fibonacci()
         {
-        var a=0;
-        var b=1;
-        if(n==0)
-        document.write("No such series"); document.write("<b>FIBONACCI SERIES:<br/></b>"); if(n==1)
-        document.write(a+"<br/>");
-        else
-        {
-        document.write(a+"<br/>");
-        document.write(b+"<br/>");
-        for(var i=2;i<n;i++)
-        {
-        var fib=a+b;
-        a=b;
-        b=fib;
-        document.write(fib+"<br />");
-        }
-        }
-        }
-        else
-        alert("Inavlid Input");
+            var n=prompt("Enter a number"); 
+            if(n==n.match(/[0-9]*/))
+            {
+                var a=0;
+                var b=1;
+                if(n==0)
+                    document.write("No such series"); 
+                document.write("<b>FIBONACCI SERIES:<br/></b>"); 
+                if(n==1)
+                    document.write(a+"<br/>");
+                else
+                {
+                    document.write(a+"<br/>");
+                    document.write(b+"<br/>");
+                    for(var i=2;i<n;i++)
+                    {
+                        var fib=a+b;
+                        a=b;
+                        b=fib;
+                        document.write(fib+"<br />");
+                    }
+                }
+            }
+            else
+                alert("Inavlid Input");
         }
         function factorial() {
-        var n=prompt("Enter a number");
-        if(n==n.match(/[0-9]*/))
-        {
-        document.write("<h3> factorial </h3>");
-        document.write("<table border='1' width='50%'>"); document.write("<tr><th>Factorial (n)</th></tr>" ); var fact=1;
-        for(i=1;i<=n;i++)
-        {
-        var fact = fact*i }
-        document.write( "<tr><td>" + fact + "</td></tr>" ); document.write( "</table>" );
-        }
-        else
-        alert("Invalid Input"); 
-    } 
+            var n=prompt("Enter a number");
+            if(n==n.match(/[0-9]*/))
+            {
+                document.write("<h3> factorial </h3>");
+                document.write("<table border='1' width='50%'>"); 
+                document.write("<tr><th>Factorial (n)</th></tr>" ); 
+                var fact=1;
+                for(i=1;i<=n;i++)
+                {
+                    var fact = fact*i 
+                }
+                document.write( "<tr><td>" + fact + "</td></tr>" ); 
+                document.write( "</table>" );
+            }
+            else
+                alert("Invalid Input"); 
+        } 
     </script>
     </head>
 <body>
