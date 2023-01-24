@@ -1,27 +1,37 @@
-<?xml-stylesheet type="text/xsl" href="/Users/rishabh/Documents/github/college/sem_5/wip/lab/10/10.xsl" ?>
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/css" href="vtu1.css"?>
+<!-- <!DOCTYPE VTU SYSTEM "vtu1.dtd">  -->
 <VTU>
-    <STUDENT>
+    <STUDENT> 
         <USN>1NH20IS131</USN>
-        <NAME>Rishabh </NAME>
-        <COLLEGE>NHCE</COLLEGE>
-        <BRANCH>ise</BRANCH>
-        <YOJ>2020</YOJ>
+        <NAME>Rishabh</NAME> 
+        <COLLEGE>NHCE</COLLEGE> 
+        <BRANCH>Ise</BRANCH> 
+        <YOJ>2020</YOJ> 
         <EMAIL>rishabh@gmail.com</EMAIL>
-    </STUDENT>
+    </STUDENT> 
     <STUDENT>
-        <USN>1NH20IS147</USN>
-        <NAME>Samit</NAME>
-        <COLLEGE>NHCE</COLLEGE>
-        <BRANCH>ise</BRANCH>
-        <YOJ>2020</YOJ>
+        <USN>1NH20IS147</USN> 
+        <NAME>Samit</NAME> 
+        <COLLEGE>NHCE</COLLEGE> 
+        <BRANCH>Cse</BRANCH> 
+        <YOJ>2020</YOJ> 
         <EMAIL>samit@gmail.com</EMAIL>
     </STUDENT>
-    <STUDENT>
-        <USN>1NH20IS127</USN>
-        <NAME>Rahul</NAME>
-        <COLLEGE>NHCE</COLLEGE>
-        <BRANCH>ise</BRANCH>
+    <STUDENT> 
+        <USN>1NH20IS127</USN> 
+        <NAME>Rahul</NAME> 
+        <COLLEGE>NHCE</COLLEGE> 
+        <BRANCH>Ece</BRANCH> 
         <YOJ>2020</YOJ>
-        <EMAIL>rahul@gmail.com</EMAIL>
+        <EMAIL>rahul@gmail.com</EMAIL> 
+    </STUDENT>
+    <STUDENT> 
+        <USN>1NH20IS114</USN> 
+        <NAME>Praneeth</NAME> 
+        <COLLEGE>NHCE</COLLEGE> 
+        <BRANCH>Ece</BRANCH> 
+        <YOJ>2020</YOJ>
+        <EMAIL>praneeth@gmail.com</EMAIL> 
     </STUDENT>
 </VTU>
