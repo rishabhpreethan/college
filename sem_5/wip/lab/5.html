@@ -9,7 +9,7 @@
         if(size<51){
             size = size + 1; 
             document.getElementById("myP1").style.fontSize = (size+'pt'); 
-            document.getElementById("myP1").style.color = "red";
+            <!-- document.getElementById("myP1").style.color = "red"; -->
         }
         else{
             clearInterval(myWait1);
@@ -19,8 +19,9 @@
     
     function ShrinkText1() {
         if(size>5){
-            size = size - 1; document.getElementById("myP2").style.fontSize = (size+'pt');
-            document.getElementById("myP2").style.color = "blue";
+            size = size - 1; 
+            document.getElementById("myP2").style.fontSize = (size+'pt');
+            <!-- document.getElementById("myP2").style.color = "blue"; -->
         }
         else{ 
             clearInterval(myWait1); 
