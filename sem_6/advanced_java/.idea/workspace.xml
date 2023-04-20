@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8c6fff1-7d24-4696-bf7b-5838bbab009d" name="Changes" comment="" />
+    <list default="true" id="b8c6fff1-7d24-4696-bf7b-5838bbab009d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,10 +43,16 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="q1" type="Application" factoryName="Application">
+    <configuration name="q1" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="q1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="q3" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="q1" />
+      <option name="MAIN_CLASS_NAME" value="q3" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
