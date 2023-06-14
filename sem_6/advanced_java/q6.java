@@ -1,4 +1,3 @@
-package studentinfo;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -39,3 +38,12 @@ public class studentinfo {
 	}
 
 }
+
+
+// create or replace procedure selection(data OUT SYS_REFCURSOR)
+//  as
+// begin
+// OPEN data FOR
+//  select id,name 
+// from student_tbl;
+// end; 
