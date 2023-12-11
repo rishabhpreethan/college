@@ -32,5 +32,5 @@ public class q3 extends Frame implements WindowListener,ActionListener {
 	public void windowIconified(WindowEvent e) {}
 	public void windowDeiconified(WindowEvent e) {}
 	public void windowDeactivated(WindowEvent e) {}
-                                                                                                                                                          public void windowClosed(WindowEvent e) {}
+    public void windowClosed(WindowEvent e) {}
 }
