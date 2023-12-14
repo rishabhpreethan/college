@@ -1,4 +1,4 @@
-#include"inet.h"
+#include "inet.h"
 int main()
 {
     intsockfd,newsockfd,clilen;

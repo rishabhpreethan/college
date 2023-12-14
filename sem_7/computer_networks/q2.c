@@ -2,13 +2,13 @@
 #include<string.h>
 struct node
 {
-	intdist[20];
+	int dist[20];
 	int from[20];
 }rt[10];
 
 int main()
 {
-	intdmat[20][20];
+	int dmat[20][20];
 	int n=i=j=k=0,count=0;
 	system("clear");
 	printf("Enter The Number Of Nodes\n");

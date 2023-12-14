@@ -25,7 +25,7 @@ intcrc(char *input,char *output,char *gp,int mode){
 
 int main(){
     char input[50],output[50];
-    charrecv[50], gp[50];
+    char recv[50], gp[50];
     system("clear");
     printf("\n Enter the input message in binary\n");
     scanf("%s",input);
