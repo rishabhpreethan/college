@@ -1,8 +1,8 @@
-#include<stdio.h>
-#include<unistd.h>
-#include<string.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 
-intcrc(char *input,char *output,char *gp,int mode){
+int crc(char *input,char *output,char *gp,int mode){
     intj,k;
     strcpy(output,input);
     if(mode){
@@ -32,8 +32,7 @@ int main(){
     printf("\n Enter the generator polynomial\n");
     scanf("%s",gp);
     crc(input,output,gp,1);
-    printf("\n The transmitted message is %s %s\n",input,
-    output+strlen (input));
+    printf("\n The transmitted message is %s %s\n", input, output+strlen(input));
     printf("\n\n Enter the received message in binary \n");
     scanf("%s",recv);
     if(!crc(recv,output,gp,0))
