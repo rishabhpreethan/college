@@ -3,7 +3,7 @@
 #include <string.h>
 
 int crc(char *input,char *output,char *gp,int mode){
-    intj,k;
+    int j,k;
     strcpy(output,input);
     if(mode){
         for(j=1; j<strlen(gp); j++)
@@ -26,7 +26,6 @@ int crc(char *input,char *output,char *gp,int mode){
 int main(){
     char input[50],output[50];
     char recv[50], gp[50];
-    system("clear");
     printf("\n Enter the input message in binary\n");
     scanf("%s",input);
     printf("\n Enter the generator polynomial\n");
