@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8c6fff1-7d24-4696-bf7b-5838bbab009d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/advanced_java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/advanced_java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/BookHub/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/BookHub/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/BookHub/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/BookHub/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/Calculator/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/Calculator/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/CurrencyConverter/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/CurrencyConverter/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/CurrencyConverter/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/CurrencyConverter/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/ExpenseManager/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/ExpenseManager/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/HealthMonitoring/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/HealthMonitoring/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/TouristSpot/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/TouristSpot/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/TouristSpot/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/TouristSpot/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/UnitConverter/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/UnitConverter/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android_app_dev/UnitConverter/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android_app_dev/UnitConverter/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

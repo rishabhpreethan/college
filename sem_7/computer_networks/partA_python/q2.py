@@ -16,7 +16,7 @@ def bf(total_nodes, cost):
             for j in range(total_nodes):
                 for k in range(total_nodes):
                     if node[i].dist[j] > node[i].dist[k] + node[k].dist[j]:
-                        node[i].dist[j], = node[i].dist[k] + node[k].dist[j]
+                        node[i].dist[j] = node[i].dist[k] + node[k].dist[j]
                         node[i].previousNode[j] = k
     # print
     for i in range(total_nodes):

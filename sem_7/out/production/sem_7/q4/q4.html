@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="button" onclick="validateLogin()">Login</button>
+        </form>
+        <p id="loginMessage"></p>
+    </div>
+
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            if (username === "Form" && password === "123") {
+                window.location.href = "success.html";
+            } else {
+                document.getElementById("loginMessage").innerText = "Invalid username or password.";
+            }
+        }
+    </script>
+</body>
+</html>
