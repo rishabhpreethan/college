@@ -20,4 +20,4 @@ else:
     # Print the result
     print("Matrix Multiplication Result:")
     for row in result:
-        print(*row)
+        print(*row)
