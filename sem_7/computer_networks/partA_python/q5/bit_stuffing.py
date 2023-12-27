@@ -7,7 +7,7 @@ def stuffed(inp):
             inp = inp[:i+5] + '0' + inp[i+5:] # add 0 between 5th and 6th bit
             i += 7
         else:
-            i += 1 # shift window to next to see
+            i += 1
     return inp
 
 def main():

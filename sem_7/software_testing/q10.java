@@ -1,47 +1,46 @@
+// Check off module-info option while making project
+// Add paths correctly to excel sheets and add build path -> selenium and jar files
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import jxl.Sheet;
-import jxl.Workbook;
-import jxl.write.Label;
-import jxl.write.WritableSheet;
-import jxl.write.WritableWorkbook;
+import jxl.*;
 import org.testng.annotations.*;
-public class excel {
-    @BeforeClass //@BeforeClass runs once before the entire test.
-    public void setUp() throws Exception {}
+
+public class ExcelTest {
     @Test
-    public void testImportexport1() throws Exception {
-        FileInputStream fi = new FileInputStream("C:\\Users\\ST AND AUTOLAB\\excel\\Students.xls");
+    public void testImportExport() throws Exception {
+        String inputFile = "C:\\Users\\ST AND AUTO LAB\\excel\\Students.xls";
+        String outputFile = "C:\\Users\\ST AND AUTO LAB\\excel\\Result.xls";
+
+        FileInputStream fi = new FileInputStream(inputFile);
         Workbook w = Workbook.getWorkbook(fi);
         Sheet s = w.getSheet(0);
-        String a[][] = new String[s.getRows()][s.getColumns()];
-        FileOutputStream fo = new FileOutputStream("C:\\Users \\ST AND AUTOLAB\\excel\\Result.xls");
+
+        FileOutputStream fo = new FileOutputStream(outputFile);
         WritableWorkbook wwb = Workbook.createWorkbook(fo);
         WritableSheet ws = wwb.createSheet("result1", 0);
-        for (int i = 0; i < s.getRows(); i++)
-            for (int j = 0; j < s.getColumns(); j++){
-                a[i][j] = s.getCell(j, i).getContents();
-                Label l2 = new Label(j, i, a[i][j]);
-                ws.addCell(l2);
-                Label l1 = new Label(6, 0, "Result");
-                ws.addCell(l1);
+
+        for (int i = 0; i < s.getRows(); i++) {
+            for (int j = 0; j < s.getColumns(); j++) {
+                String content = s.getCell(j, i).getContents();
+                Label label = new Label(j, i, content);
+                ws.addCell(label);
             }
-            for (int i = 1; i < s.getRows(); i++) {
-                for (int j = 2; j < s.getColumns(); j++){
-                    a[i][j] = s.getCell(j, i).getContents();
-                    int x=Integer.parseInt(a[i][j]);
-                    if(x > 35){
-                        Label l1 = new Label(6, i, "pass");
-                        ws.addCell(l1);
-                    }
-                    else{
-                        Label l1 = new Label(6, i, "fail");
-                        ws.addCell(l1);
-                        break;
-                    }
+        }
+
+        Label res = new Label(6, 0, "Result");
+        ws.addCell(res);
+
+        for (int i = 1; i < s.getRows(); i++) {
+            for (int j = 2; j < s.getColumns(); j++) {
+                int score = Integer.parseInt(s.getCell(j, i).getContents());
+                Label resultLabel = new Label(6, i, (score > 35) ? "pass" : "fail");
+                ws.addCell(resultLabel);
+                if (score <= 35) {
+                    break;
                 }
-                System.out.println("Records sucessfully updated ");
             }
+        }
+        System.out.println("Records successfully updated ");
         wwb.write();
         wwb.close();
     }

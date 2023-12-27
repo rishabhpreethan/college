@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Client {
     public static void main(String[] args) throws IOException {
-        Socket s = new Socket("127.0.0.1", 4001);
+        Socket s = new Socket("127.0.0.1", 4000);
         // Reading file name from keyboard (input stream)
         System.out.println("Enter file name : ");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
