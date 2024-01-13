@@ -1,4 +1,8 @@
 public class main {
+	public static void main(String[] args) {
+        main c = new main();
+        System.out.println(c.triangle(2,2,2));
+    }
     public static String triangle(int a, int b, int c) {
         boolean side1 = (a >= 1) && (a <= 10);
         boolean side2 = (b >= 1) && (b <= 10);

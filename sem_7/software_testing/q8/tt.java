@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 public class tt {
     @Test
     public void testTriangle() {
-        Main obj = new Main();
+        main obj = new main();
         String op1 = obj.triangle(10, 10, 10);
         assertEquals("equilateral", op1);
         String op2 = obj.triangle(10, 10, 5);

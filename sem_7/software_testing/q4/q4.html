@@ -4,19 +4,15 @@
     <title>Login Form</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Login Form</h2>
-        <form id="loginForm">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button type="button" onclick="validateLogin()">Login</button>
-        </form>
-        <p id="loginMessage"></p>
-    </div>
+    <h2>Login Form</h2>
+    <form>
+        Username : <input type="text" id="username">
+        <br>
+        Password : <input type="password" id="password">
+        <br>
+        <button type="button" onclick="validateLogin()">Login</button>
+    </form> 
+    <p id="loginMessage"></p>
 
     <script>
         function validateLogin() {
